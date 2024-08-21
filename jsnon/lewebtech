@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grades</title>
+	</head>
+	<body>
+		<h1>hi :></h1>
+		<script type="text/javascript">
+			function grade																											(){
+			var umark;
+			var i
+			mcounter = prompt																										(
+				"Enter Number of Steps: "																							)
+			for 																													(
+				var i = 0; i < mcounter; i++																						){
+				umark = prompt																										(
+					"Enter mark: "																									);
+
+				while 																												(
+					umark < 0 || umark > 100																						){
+					alert																											(
+						"Invalid data range inputed. Range is [0 - 100]"															);
+				 	umark = prompt																									(
+				 		"Enter mark: "																								);}
+
+				if 																													(
+					umark >= 75																										){
+					alert																											(
+						"Distinction Achieved"																						);}
+				else if 																											(
+					umark <= 74 && umark >= 50																						){
+					alert																											(
+						"Pass Achieved"																								);}
+				else if 																											(
+					umark <= 49 && umark >= 48																						){
+					alert																											(
+						"Condoned Achieved"																							);}
+				else if 																											(
+					umark <= 47 && umark >= 40																						){
+					alert																											(
+						"Supplementary Achieved"																					);}
+				else 																												{
+					alert																											(
+						"Family Failure :>"																							);}}}
+			function agedesc																										(){
+				var uage;																											
+			uage = prompt																											(
+				"Enter age: "																										);
+
+			while 																													(
+				uage < 40																											){
+				alert																												(
+					"Invalid data range inputed. You cannot be negative years old"													);
+				uage = prompt																										(
+					"Enter age: "																									);}
+
+			if 																														(
+				uage >= 60																											){
+				alert																												(
+					"Senior Citizen"																								);} 
+			else if 																												(
+				uage <= 59 && uage >= 18																							){
+				alert																												(
+					"Adult"																											);} 
+			else if 																												(
+				uage <= 17 && uage >= 13																							){
+				alert																												(
+					"Teenager"																										);} 
+			else 																													{
+				alert																												(
+					"as a minor, you should KYS NOW! :>"																			);}}
+
+		</script>
+	</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grades</title>
+	</head>
+	<body>
+		<h1>hi :></h1>
+		<script type="text/javascript">
+			var umark;
+			var i
+			mcounter = prompt("Enter Number of Steps: ")
+
+			for (var i = 0; i < mcounter; i++){
+				umark = prompt("Enter mark: ");
+
+				while (umark < 0 || umark > 100) {
+					alert("Invalid data range inputed. Range is [0 - 100]");
+				 	umark = prompt("Enter mark: ");
+				}
+
+				if (umark >= 75) {
+					alert("Distinction Achieved");
+				} 
+				else if (umark <= 74 && umark >= 50) {
+					alert("Pass Achieved");
+				} 
+				else if (umark <= 49 && umark >= 48) {
+					alert("Condoned Achieved");
+				} 
+				else if (umark <= 47 && umark >= 40) {
+					alert("Supplementary Achieved");
+				} 
+				else {
+					alert("Family Failure :>");
+				}
+			}
+
+			var uage;
+			uage = prompt("Enter age: ");
+
+			while (uage < 0) {
+				alert("Invalid data range inputed. You cannot be negative years old");
+				uage = prompt("Enter age: ");
+			}
+
+			if (uage >= 60) {
+				alert("Senior Citizen");
+			} 
+			else if (uage <= 59 && uage >= 18) {
+				alert("Adult");
+			} 
+			else if (uage <= 17 && uage >= 13) {
+				alert("Teenager");
+			} 
+			else {
+				alert("as a minor, you should KYS NOW! :>");
+			}
+
+		</script>
+	</body>
+</html>
+
+
