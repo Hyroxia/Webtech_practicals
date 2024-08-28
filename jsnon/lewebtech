@@ -138,4 +138,58 @@
 	</body>
 </html>
 
+-----
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grades</title>
+	</head>
+	<body>
+		<h1>hi :></h1>
+		<script type="text/javascript">
+/*
+            var numb = prompt                                                                                                               (
+                'enter number:'                                                                                                             )
+            function leevencalc                                                                                                             (
+                num1                                                                                                                        ){
+                var oddeven = num1%2
+                if                                                                                                                          (
+                    oddeven == 0                                                                                                            ){
+                    return "Even (or is it?)"
+                                                                                                                                            }
+                else                                                                                                                        {
+                    return "Odd (or are you?)"
+                                                                                                                                            }}
+            
+            var returnedval = leevencalc                                                                                                    (
+                numb                                                                                                                        )
+            alert                                                                                                                           (
+                returnedval                                                                                                                 )
+*/
+        var pnum = prompt("Enter a number: ");
+
+        function primefinder(num2){
+            var counter = 0
+            for (var num3 = 1; num3 <= num2; num3++){
+                if (num2%num3 == 0){
+                    counter++
+                }
+            }
+            if (counter > 2){
+                return"Number is not Prime";
+            }
+            else{
+                return"Number is prime";
+            }
+        }
+
+        var primer = primefinder(pnum);
+        alert(primer)
+		</script>
+	</body>
+</html>
+
+
 
